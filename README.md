@@ -1,6 +1,6 @@
 # Asadin Edu · asadinedu.com
 
-Situs landing **Asadin Edu**, lembaga pendidikan independen yang didirikan Prasada Arif Nurudin. Halaman ini memperkenalkan keempat ruang belajarnya dan menautkannya:
+Situs landing **Asadin Edu**, payung independen untuk pendidikan Indonesia yang dijalankan sendiri oleh Prasada Arif Nurudin. Asadin Edu bukan sekolah atau perusahaan; halaman ini memperkenalkan keempat ruang belajar di bawah payungnya dan menautkannya:
 
 | Proyek | Bidang | Alamat | Repo |
 |---|---|---|---|
@@ -13,7 +13,7 @@ Situs pendiri: https://asadin-personal-info.pages.dev
 
 ## Isi
 
-Situs statis tanpa framework dan tanpa build: `index.html`, `styles.css`, dan `app.js` (pilihan bahasa ID/EN, pratinjau empat dunia, menu ponsel, dan animasi muncul yang menghormati *reduced motion*). Huruf Fraunces dan Instrument Sans disimpan sendiri di `assets/fonts/` (SIL Open Font License), jadi halaman tidak memuat apa pun dari luar. `_headers` memasang CSP ketat dan cache aset.
+Situs statis tanpa framework dan tanpa build: `index.html`, `styles.css`, dan `app.js` (pilihan bahasa ID/EN, indeks ruang belajar yang mengikuti gulir, menu ponsel, dan animasi halus yang menghormati *reduced motion*). Huruf Fraunces dan Instrument Sans disimpan sendiri di `assets/fonts/` (SIL Open Font License), jadi halaman tidak memuat apa pun dari luar. `_headers` memasang CSP ketat dan cache aset.
 
 Angka di setiap kartu proyek diambil dari README dan data proyek masing-masing (13 Oktober 2026). Perbarui di sini bila proyeknya berubah.
 

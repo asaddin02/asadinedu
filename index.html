@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Asadin Edu — Empat dunia ilmu, terbuka untuk semua</title>
-  <meta name="description" content="Asadin Edu adalah lembaga pendidikan independen yang didirikan Prasada Arif Nurudin. Biotaloka, Kimialoka, Fisikaloka, dan Mitoloka: ruang belajar biologi, kimia, fisika, dan mitologi dari SD sampai kuliah, gratis, tanpa iklan, tanpa akun.">
+  <title>Asadin Edu — Empat dunia ilmu, satu payung</title>
+  <meta name="description" content="Asadin Edu adalah payung independen untuk pendidikan Indonesia yang dijalankan Prasada Arif Nurudin. Di bawahnya ada Biotaloka, Kimialoka, Fisikaloka, dan Mitoloka: ruang belajar biologi, kimia, fisika, dan mitologi untuk SD sampai kuliah, gratis, tanpa iklan, tanpa akun.">
   <link rel="canonical" href="https://asadinedu.com/">
   <meta name="theme-color" content="#f3eee3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#14120e" media="(prefers-color-scheme: dark)">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Asadin Edu">
-  <meta property="og:title" content="Asadin Edu — Empat dunia ilmu, terbuka untuk semua">
-  <meta property="og:description" content="Lembaga pendidikan independen: Biotaloka, Kimialoka, Fisikaloka, dan Mitoloka. Gratis, tanpa iklan, tanpa akun.">
+  <meta property="og:title" content="Asadin Edu — Empat dunia ilmu, satu payung">
+  <meta property="og:description" content="Payung independen untuk pendidikan Indonesia: Biotaloka, Kimialoka, Fisikaloka, dan Mitoloka. Gratis, tanpa iklan, tanpa akun.">
   <meta property="og:url" content="https://asadinedu.com/">
   <meta property="og:image" content="https://asadinedu.com/assets/img/og.png">
   <meta property="og:image:width" content="1200">
@@ -25,22 +25,13 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "EducationalOrganization",
+    "@type": "Organization",
     "name": "Asadin Edu",
     "url": "https://asadinedu.com/",
     "logo": "https://asadinedu.com/assets/logos/asadin.svg",
+    "description": "Payung independen untuk pendidikan Indonesia, dijalankan oleh Prasada Arif Nurudin.",
     "founder": { "@type": "Person", "name": "Prasada Arif Nurudin", "url": "https://asadin-personal-info.pages.dev/" },
-    "sameAs": ["https://github.com/asaddin02"],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Ruang belajar Asadin Edu",
-      "itemListElement": [
-        { "@type": "Offer", "price": "0", "priceCurrency": "IDR", "itemOffered": { "@type": "WebSite", "name": "Biotaloka", "url": "https://biotaloka.asadinedu.com/" } },
-        { "@type": "Offer", "price": "0", "priceCurrency": "IDR", "itemOffered": { "@type": "WebSite", "name": "Kimialoka", "url": "https://kimialoka.asadinedu.com/" } },
-        { "@type": "Offer", "price": "0", "priceCurrency": "IDR", "itemOffered": { "@type": "WebSite", "name": "Fisikaloka", "url": "https://fisikaloka.asadinedu.com/" } },
-        { "@type": "Offer", "price": "0", "priceCurrency": "IDR", "itemOffered": { "@type": "WebSite", "name": "Mitoloka", "url": "https://mitoloka.asadinedu.com/" } }
-      ]
-    }
+    "sameAs": ["https://github.com/asaddin02"]
   }
   </script>
   <script src="/app.js"></script>
@@ -50,18 +41,18 @@
 
   <header class="masthead" data-masthead>
     <div class="wrap masthead__row">
-      <a class="brand" href="/" aria-label="Asadin Edu, beranda">
-        <img src="/assets/logos/asadin.svg" alt="" width="34" height="34">
+      <a class="brand" href="/" aria-label="Asadin Edu, beranda" data-i18n-aria="brand.aria">
+        <img src="/assets/logos/asadin.svg" alt="" width="32" height="32">
         <span class="brand__name">Asadin <em>Edu</em></span>
       </a>
-      <nav class="nav" aria-label="Navigasi utama" data-nav>
-        <a href="#dunia" data-i18n="nav.worlds">Empat dunia</a>
-        <a href="#prinsip" data-i18n="nav.principles">Prinsip</a>
+      <nav class="nav" aria-label="Navigasi utama" data-nav data-i18n-aria="nav.aria">
+        <a href="#ruang" data-i18n="nav.worlds">Ruang belajar</a>
+        <a href="#tentang" data-i18n="nav.about">Tentang</a>
         <a href="#pendiri" data-i18n="nav.founder">Pendiri</a>
         <a href="#dukung" data-i18n="nav.support">Dukung</a>
       </nav>
       <div class="masthead__tools">
-        <div class="lang" role="group" aria-label="Bahasa / Language" data-i18n-aria="lang.group">
+        <div class="lang" role="group" aria-label="Bahasa / Language">
           <button type="button" data-lang="id" aria-pressed="true">ID</button>
           <button type="button" data-lang="en" aria-pressed="false">EN</button>
         </div>
@@ -71,256 +62,269 @@
         </button>
       </div>
     </div>
-    <div class="mobile-menu" id="mobile-menu" hidden data-mobile-menu>
-      <a href="#dunia" data-i18n="nav.worlds">Empat dunia</a>
-      <a href="#prinsip" data-i18n="nav.principles">Prinsip</a>
+    <nav class="mobile-menu" id="mobile-menu" hidden data-mobile-menu aria-label="Menu">
+      <a href="#ruang" data-i18n="nav.worlds">Ruang belajar</a>
+      <a href="#tentang" data-i18n="nav.about">Tentang</a>
       <a href="#pendiri" data-i18n="nav.founder">Pendiri</a>
       <a href="#dukung" data-i18n="nav.support">Dukung</a>
-    </div>
+    </nav>
   </header>
 
   <main id="main">
-    <!-- Hero -->
+
+    <!-- ============ HERO ============ -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="wrap hero__grid">
         <div class="hero__copy">
-          <p class="eyebrow" data-reveal><span class="dot" aria-hidden="true"></span><span data-i18n="hero.eyebrow">Lembaga pendidikan independen · sejak 2026</span></p>
-          <h1 id="hero-title" class="display" data-reveal>
-            <span data-i18n="hero.title.a">Empat dunia ilmu.</span>
-            <span class="display__soft" data-i18n="hero.title.b">Satu pintu yang selalu terbuka.</span>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Payung independen untuk pendidikan Indonesia</p>
+          <h1 id="hero-title" class="hero__title">
+            <span data-i18n="hero.t1">Empat dunia ilmu,</span>
+            <em data-i18n="hero.t2">satu payung.</em>
           </h1>
-          <p class="lede" data-reveal data-i18n="hero.lede">Asadin Edu didirikan oleh Prasada Arif Nurudin untuk membuat belajar lebih mudah dan terjangkau. Kami membangun ruang belajar interaktif untuk pelajar SD sampai mahasiswa, juga guru: gratis, tanpa iklan, tanpa akun, dan setiap fakta bersumber.</p>
-          <div class="hero__actions" data-reveal>
-            <a class="btn btn--ink" href="#dunia"><span data-i18n="hero.cta">Jelajahi keempat dunia</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 4v12m0 0-5-5m5 5 5-5"/></svg></a>
-            <a class="btn btn--line" href="#pendiri" data-i18n="hero.cta2">Kenali pendirinya</a>
+          <p class="hero__lede" data-i18n="hero.lede">Asadin Edu menaungi empat ruang belajar untuk pelajar SD sampai mahasiswa, juga guru. Semuanya gratis, tanpa iklan, tanpa akun, dan setiap faktanya bersumber.</p>
+          <div class="hero__actions">
+            <a class="btn btn--ink" href="#ruang"><span data-i18n="hero.cta">Pilih ruang belajar</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 4v12m0 0-5-5m5 5 5-5"/></svg></a>
+            <a class="btn btn--line" href="#tentang" data-i18n="hero.cta2">Tentang Asadin Edu</a>
           </div>
+          <a class="byline" href="#pendiri">
+            <img src="/assets/img/founder-480.webp" alt="" width="44" height="44">
+            <span><span class="byline__label" data-i18n="hero.by">Dijalankan oleh</span> <strong>Prasada Arif Nurudin</strong></span>
+          </a>
         </div>
 
-        <!-- The index: four worlds, with a live preview on hover/focus (desktop). -->
-        <div class="atlas" data-reveal>
-          <figure class="atlas__preview" aria-hidden="true" data-preview>
-            <img src="/assets/img/shot-biotaloka-640.webp" alt="" width="640" height="400" data-preview-img="biotaloka">
-            <img src="/assets/img/shot-kimialoka-640.webp" alt="" width="640" height="400" data-preview-img="kimialoka">
-            <img src="/assets/img/shot-fisikaloka-640.webp" alt="" width="640" height="400" data-preview-img="fisikaloka">
-            <img src="/assets/img/shot-mitoloka-640.webp" alt="" width="640" height="400" data-preview-img="mitoloka">
-            <figcaption class="atlas__caption" data-preview-caption>biotaloka.asadinedu.com</figcaption>
-          </figure>
-          <ol class="atlas__list">
-            <li><a class="atlas__item" href="https://biotaloka.asadinedu.com/" data-world="biotaloka" data-tone="bio">
-              <span class="atlas__no">01</span>
-              <span class="atlas__name">Biotaloka</span>
-              <span class="atlas__field" data-i18n="w.bio.field">Biologi · dunia makhluk hidup</span>
-              <svg class="atlas__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6m0 0H7m7 0v7"/></svg>
+        <div class="canopy">
+          <svg class="canopy__arc" viewBox="0 0 600 150" aria-hidden="true" focusable="false">
+            <path id="arc-path" d="M20 148 C 60 30, 540 30, 580 148" fill="none"/>
+            <path class="canopy__line" d="M20 148 C 60 30, 540 30, 580 148" fill="none"/>
+            <path class="canopy__rib" d="M300 72 L300 148 M160 78 L118 148 M440 78 L482 148" fill="none"/>
+            <text class="canopy__text"><textPath href="#arc-path" startOffset="50%" text-anchor="middle">ASADIN · EDU · ASADINEDU.COM</textPath></text>
+          </svg>
+          <ul class="tiles" aria-label="Empat ruang belajar" data-i18n-aria="tiles.aria">
+            <li><a class="tile tile--bio" href="https://biotaloka.asadinedu.com/">
+              <span class="tile__top"><span class="tile__no">01</span><svg class="tile__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6m0 0H7m7 0v7"/></svg></span>
+              <span class="tile__logo"><img src="/assets/logos/biotaloka.png" alt="" width="40" height="40"></span>
+              <span class="tile__name">Biotaloka</span>
+              <span class="tile__field" data-i18n="bio.field">Biologi</span>
             </a></li>
-            <li><a class="atlas__item" href="https://kimialoka.asadinedu.com/" data-world="kimialoka" data-tone="chem">
-              <span class="atlas__no">02</span>
-              <span class="atlas__name">Kimialoka</span>
-              <span class="atlas__field" data-i18n="w.chem.field">Kimia · dunia materi dan perubahannya</span>
-              <svg class="atlas__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6m0 0H7m7 0v7"/></svg>
+            <li><a class="tile tile--chem" href="https://kimialoka.asadinedu.com/">
+              <span class="tile__top"><span class="tile__no">02</span><svg class="tile__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6m0 0H7m7 0v7"/></svg></span>
+              <span class="tile__logo"><img src="/assets/logos/kimialoka.png" alt="" width="40" height="40"></span>
+              <span class="tile__name">Kimialoka</span>
+              <span class="tile__field" data-i18n="chem.field">Kimia</span>
             </a></li>
-            <li><a class="atlas__item" href="https://fisikaloka.asadinedu.com/" data-world="fisikaloka" data-tone="phys">
-              <span class="atlas__no">03</span>
-              <span class="atlas__name">Fisikaloka</span>
-              <span class="atlas__field" data-i18n="w.phys.field">Fisika · dunia gaya, energi, dan cahaya</span>
-              <svg class="atlas__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6m0 0H7m7 0v7"/></svg>
+            <li><a class="tile tile--phys" href="https://fisikaloka.asadinedu.com/">
+              <span class="tile__top"><span class="tile__no">03</span><svg class="tile__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6m0 0H7m7 0v7"/></svg></span>
+              <span class="tile__logo"><img src="/assets/logos/fisikaloka.png" alt="" width="40" height="40"></span>
+              <span class="tile__name">Fisikaloka</span>
+              <span class="tile__field" data-i18n="phys.field">Fisika</span>
             </a></li>
-            <li><a class="atlas__item" href="https://mitoloka.asadinedu.com/" data-world="mitoloka" data-tone="myth">
-              <span class="atlas__no">04</span>
-              <span class="atlas__name">Mitoloka</span>
-              <span class="atlas__field" data-i18n="w.myth.field">Mitologi · dunia kisah dan makhluk legenda</span>
-              <svg class="atlas__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6m0 0H7m7 0v7"/></svg>
+            <li><a class="tile tile--myth" href="https://mitoloka.asadinedu.com/">
+              <span class="tile__top"><span class="tile__no">04</span><svg class="tile__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6m0 0H7m7 0v7"/></svg></span>
+              <span class="tile__logo"><img src="/assets/logos/mitoloka.png" alt="" width="40" height="40"></span>
+              <span class="tile__name">Mitoloka</span>
+              <span class="tile__field" data-i18n="myth.field">Mitologi</span>
             </a></li>
-          </ol>
+          </ul>
         </div>
       </div>
-    </section>
 
-    <!-- Name -->
-    <section class="loka" aria-labelledby="loka-title">
-      <div class="wrap loka__grid">
-        <h2 id="loka-title" class="kicker" data-i18n="loka.kicker">Mengapa “-loka”?</h2>
-        <p class="loka__text" data-reveal data-i18n-html="loka.text"><em>Loka</em> berarti dunia atau alam. Setiap ruang belajar kami adalah satu dunia yang bisa dijelajahi sendiri: <span class="hl hl--bio">biota</span>, <span class="hl hl--chem">kimia</span>, <span class="hl hl--phys">fisika</span>, dan <span class="hl hl--myth">mitos</span>. Pintunya sama untuk semua orang. Tidak perlu daftar, tidak perlu bayar.</p>
-      </div>
-    </section>
-
-    <!-- Worlds -->
-    <section class="worlds" id="dunia" aria-labelledby="worlds-title">
       <div class="wrap">
-        <header class="section-head" data-reveal>
-          <p class="kicker" data-i18n="worlds.kicker">Empat dunia</p>
-          <h2 id="worlds-title" class="h2" data-i18n="worlds.title">Masing-masing lengkap, berjenjang, dan bersumber.</h2>
-        </header>
+        <dl class="ribbon">
+          <div><dt>160</dt><dd data-i18n="rb.1">kartu spesies kurasi</dd></div>
+          <div><dt>118</dt><dd data-i18n="rb.2">unsur kimia dan isotopnya</dd></div>
+          <div><dt>61</dt><dd data-i18n="rb.3">pelajaran fisika berjenjang</dd></div>
+          <div><dt>1.567</dt><dd data-i18n="rb.4">makhluk mitologi bergambar</dd></div>
+          <div><dt>Rp0</dt><dd data-i18n="rb.5">biaya untuk belajar</dd></div>
+          <div><dt>0</dt><dd data-i18n="rb.6">iklan dan akun</dd></div>
+        </dl>
       </div>
-
-      <article class="world" data-tone="bio" aria-labelledby="bio-title" data-reveal>
-        <div class="wrap world__grid">
-          <div class="world__text">
-            <p class="world__meta"><img src="/assets/logos/biotaloka.png" alt="" width="40" height="40"><span>01 · <span data-i18n="w.bio.short">Biologi</span></span></p>
-            <h3 id="bio-title" class="world__title">Biotaloka</h3>
-            <p class="world__lede" data-i18n="w.bio.lede">Atlas kehidupan yang terbuka. Jelajahi jutaan spesies dari GBIF dan iNaturalist, pohon kehidupan sampai tingkat spesies, dan materi biologi yang mengikuti jenjangmu.</p>
-            <dl class="facts">
-              <div><dt>41</dt><dd data-i18n="w.bio.f1">topik dalam 8 bidang biologi, ditulis empat lapis dari SD sampai kuliah</dd></div>
-              <div><dt>160</dt><dd data-i18n="w.bio.f2">kartu spesies kurasi berbahasa sederhana</dd></div>
-              <div><dt>9</dt><dd data-i18n="w.bio.f3">simulasi laboratorium, dari fotosintesis sampai kode genetik</dd></div>
-              <div><dt>5</dt><dd data-i18n="w.bio.f4">mode belajar: SD, SMP, SMA, kuliah, dan guru</dd></div>
-            </dl>
-            <div class="world__actions">
-              <a class="btn btn--world" href="https://biotaloka.asadinedu.com/"><span data-i18n="w.bio.cta">Buka Biotaloka</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6m0 0H7m7 0v7"/></svg></a>
-              <a class="link" href="https://github.com/asaddin02/asadin-edu-biotaloka" data-i18n="code">Kode sumber</a>
-            </div>
-          </div>
-          <a class="world__shot" href="https://biotaloka.asadinedu.com/" tabindex="-1" aria-hidden="true">
-            <span class="frame"><span class="frame__bar"><i></i><i></i><i></i><b>biotaloka.asadinedu.com</b></span>
-            <img loading="lazy" decoding="async" src="/assets/img/shot-biotaloka-1280.webp" srcset="/assets/img/shot-biotaloka-640.webp 640w, /assets/img/shot-biotaloka-1280.webp 1280w" sizes="(min-width: 960px) 56vw, 100vw" alt="" width="1280" height="800"></span>
-          </a>
-        </div>
-      </article>
-
-      <article class="world world--flip" data-tone="chem" aria-labelledby="chem-title" data-reveal>
-        <div class="wrap world__grid">
-          <div class="world__text">
-            <p class="world__meta"><img src="/assets/logos/kimialoka.png" alt="" width="40" height="40"><span>02 · <span data-i18n="w.chem.short">Kimia</span></span></p>
-            <h3 id="chem-title" class="world__title">Kimialoka</h3>
-            <p class="world__lede" data-i18n="w.chem.lede">Ensiklopedia kimia interaktif: dari materi dan atom sampai reaksi. Nilai ilmiahnya diambil dari lembaga rujukan seperti IUPAC, PubChem, dan NIST, lengkap dengan sumbernya.</p>
-            <dl class="facts">
-              <div><dt>118</dt><dd data-i18n="w.chem.f1">unsur dengan berat atom standar IUPAC dan isotop alaminya</dd></div>
-              <div><dt>3.557</dt><dd data-i18n="w.chem.f2">nuklida, ditambah 60 ion dan 76 reaksi setara</dd></div>
-              <div><dt>292</dt><dd data-i18n="w.chem.f3">molekul dan material kurasi, plus pencarian 100 juta lebih senyawa PubChem</dd></div>
-              <div><dt>14</dt><dd data-i18n="w.chem.f4">laboratorium virtual dan 29 materi berjenjang</dd></div>
-            </dl>
-            <div class="world__actions">
-              <a class="btn btn--world" href="https://kimialoka.asadinedu.com/"><span data-i18n="w.chem.cta">Buka Kimialoka</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6m0 0H7m7 0v7"/></svg></a>
-              <a class="link" href="https://github.com/asaddin02/asadin-edu-kimialoka" data-i18n="code">Kode sumber</a>
-            </div>
-          </div>
-          <a class="world__shot" href="https://kimialoka.asadinedu.com/" tabindex="-1" aria-hidden="true">
-            <span class="frame"><span class="frame__bar"><i></i><i></i><i></i><b>kimialoka.asadinedu.com</b></span>
-            <img loading="lazy" decoding="async" src="/assets/img/shot-kimialoka-1280.webp" srcset="/assets/img/shot-kimialoka-640.webp 640w, /assets/img/shot-kimialoka-1280.webp 1280w" sizes="(min-width: 960px) 56vw, 100vw" alt="" width="1280" height="800"></span>
-          </a>
-        </div>
-      </article>
-
-      <article class="world" data-tone="phys" aria-labelledby="phys-title" data-reveal>
-        <div class="wrap world__grid">
-          <div class="world__text">
-            <p class="world__meta"><img src="/assets/logos/fisikaloka.png" alt="" width="40" height="40"><span>03 · <span data-i18n="w.phys.short">Fisika</span></span></p>
-            <h3 id="phys-title" class="world__title">Fisikaloka</h3>
-            <p class="world__lede" data-i18n="w.phys.lede">Ruang belajar fisika berbahasa Indonesia. Setiap pelajaran bergerak dari intuisi ke penjelasan, contoh terurai, aktivitas, dan kuis, dengan asumsi serta batas model yang ditulis terang.</p>
-            <dl class="facts">
-              <div><dt>61</dt><dd data-i18n="w.phys.f1">pelajaran dalam jalur SD, SMP, SMA, universitas, dan pengajar</dd></div>
-              <div><dt>13</dt><dd data-i18n="w.phys.f2">laboratorium: proyektil, bandul, Doppler, orbit, rangkaian DC, dan lainnya</dd></div>
-              <div><dt>28</dt><dd data-i18n="w.phys.f3">domain fisika yang saling terhubung</dd></div>
-              <div><dt>19</dt><dd data-i18n="w.phys.f4">persamaan, 14 di antaranya dengan kalkulator</dd></div>
-            </dl>
-            <div class="world__actions">
-              <a class="btn btn--world" href="https://fisikaloka.asadinedu.com/"><span data-i18n="w.phys.cta">Buka Fisikaloka</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6m0 0H7m7 0v7"/></svg></a>
-              <a class="link" href="https://github.com/asaddin02/asadin-edu-fisikaloka" data-i18n="code">Kode sumber</a>
-            </div>
-          </div>
-          <a class="world__shot" href="https://fisikaloka.asadinedu.com/" tabindex="-1" aria-hidden="true">
-            <span class="frame"><span class="frame__bar"><i></i><i></i><i></i><b>fisikaloka.asadinedu.com</b></span>
-            <img loading="lazy" decoding="async" src="/assets/img/shot-fisikaloka-1280.webp" srcset="/assets/img/shot-fisikaloka-640.webp 640w, /assets/img/shot-fisikaloka-1280.webp 1280w" sizes="(min-width: 960px) 56vw, 100vw" alt="" width="1280" height="800"></span>
-          </a>
-        </div>
-      </article>
-
-      <article class="world world--flip world--dark" data-tone="myth" aria-labelledby="myth-title" data-reveal>
-        <div class="wrap world__grid">
-          <div class="world__text">
-            <p class="world__meta"><img src="/assets/logos/mitoloka.png" alt="" width="40" height="40"><span>04 · <span data-i18n="w.myth.short">Mitologi</span></span></p>
-            <h3 id="myth-title" class="world__title">Mitoloka</h3>
-            <p class="world__lede" data-i18n="w.myth.lede">Ensiklopedia makhluk mitologi dan folklor dari berbagai peradaban. Setiap entri bersandar pada kutipan sumber, membedakan tradisi asli dari budaya populer, dan menghormati keyakinan yang masih hidup.</p>
-            <dl class="facts">
-              <div><dt>1.567</dt><dd data-i18n="w.myth.f1">makhluk dengan riset lengkap dan ilustrasi yang ditinjau</dd></div>
-              <div><dt>121</dt><dd data-i18n="w.myth.f2">tradisi budaya, dari Nusantara sampai Andes</dd></div>
-              <div><dt>2</dt><dd data-i18n="w.myth.f3">bahasa: Indonesia dan English</dd></div>
-              <div><dt>5</dt><dd data-i18n="w.myth.f4">panduan belajar, dibuka dengan “Manusia di balik setiap makhluk”</dd></div>
-            </dl>
-            <div class="world__actions">
-              <a class="btn btn--world" href="https://mitoloka.asadinedu.com/"><span data-i18n="w.myth.cta">Buka Mitoloka</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6m0 0H7m7 0v7"/></svg></a>
-              <a class="link" href="https://github.com/asaddin02/asadin-edu-mitoloka" data-i18n="code">Kode sumber</a>
-            </div>
-          </div>
-          <a class="world__shot" href="https://mitoloka.asadinedu.com/" tabindex="-1" aria-hidden="true">
-            <span class="frame"><span class="frame__bar"><i></i><i></i><i></i><b>mitoloka.asadinedu.com</b></span>
-            <img loading="lazy" decoding="async" src="/assets/img/shot-mitoloka-1280.webp" srcset="/assets/img/shot-mitoloka-640.webp 640w, /assets/img/shot-mitoloka-1280.webp 1280w" sizes="(min-width: 960px) 56vw, 100vw" alt="" width="1280" height="800"></span>
-          </a>
-        </div>
-      </article>
     </section>
 
-    <!-- Principles -->
-    <section class="principles" id="prinsip" aria-labelledby="principles-title">
+    <!-- ============ WORLDS ============ -->
+    <section class="worlds" id="ruang" aria-labelledby="worlds-title">
       <div class="wrap">
-        <header class="section-head" data-reveal>
-          <p class="kicker" data-i18n="pr.kicker">Prinsip</p>
-          <h2 id="principles-title" class="h2" data-i18n="pr.title">Cara kami membangun ruang belajar.</h2>
+        <header class="worlds__head">
+          <div>
+            <p class="kicker" data-i18n="worlds.kicker">Ruang belajar</p>
+            <h2 id="worlds-title" class="h2" data-i18n="worlds.title">Empat dunia, masing-masing berdiri sendiri.</h2>
+          </div>
+          <p class="worlds__note" data-i18n-html="worlds.note"><em>Loka</em> berarti dunia atau alam. Setiap ruang belajar punya alamatnya sendiri dan bisa dijelajahi tanpa daftar: <b class="t-bio">biota</b>, <b class="t-chem">kimia</b>, <b class="t-phys">fisika</b>, dan <b class="t-myth">mitos</b>.</p>
         </header>
-        <ol class="principles__list">
-          <li data-reveal>
-            <span class="principles__no">i.</span>
-            <h3 data-i18n="pr.1.t">Terjangkau berarti tanpa penghalang</h3>
-            <p data-i18n="pr.1.p">Gratis, tanpa iklan, tanpa akun, dan tanpa analitik. Situsnya dirancang ringan agar nyaman dibuka dari ponsel. Catatan belajar tersimpan di perangkatmu sendiri.</p>
+
+        <div class="showcase">
+          <nav class="showcase__index" aria-label="Daftar ruang belajar" data-i18n-aria="worlds.index">
+            <ol>
+              <li><a href="#bio" data-tone="bio" data-spy="bio"><span class="si__no">01</span><span class="si__name">Biotaloka</span><span class="si__field" data-i18n="bio.field">Biologi</span></a></li>
+              <li><a href="#chem" data-tone="chem" data-spy="chem"><span class="si__no">02</span><span class="si__name">Kimialoka</span><span class="si__field" data-i18n="chem.field">Kimia</span></a></li>
+              <li><a href="#phys" data-tone="phys" data-spy="phys"><span class="si__no">03</span><span class="si__name">Fisikaloka</span><span class="si__field" data-i18n="phys.field">Fisika</span></a></li>
+              <li><a href="#myth" data-tone="myth" data-spy="myth"><span class="si__no">04</span><span class="si__name">Mitoloka</span><span class="si__field" data-i18n="myth.field">Mitologi</span></a></li>
+            </ol>
+          </nav>
+
+          <div class="showcase__panels">
+            <article class="panel" id="bio" data-tone="bio" aria-labelledby="bio-title">
+              <a class="shot" href="https://biotaloka.asadinedu.com/" tabindex="-1" aria-hidden="true">
+                <span class="shot__bar"><i></i><i></i><i></i><span>biotaloka.asadinedu.com</span></span>
+                <img loading="lazy" decoding="async" src="/assets/img/shot-biotaloka-1280.webp" srcset="/assets/img/shot-biotaloka-640.webp 640w, /assets/img/shot-biotaloka-1280.webp 1280w" sizes="(min-width: 1000px) 820px, 100vw" alt="" width="1280" height="800">
+              </a>
+              <div class="panel__body">
+                <p class="panel__meta"><img src="/assets/logos/biotaloka.png" alt="" width="28" height="28"><span>01 · <span data-i18n="bio.field">Biologi</span></span></p>
+                <h3 id="bio-title" class="panel__title">Biotaloka</h3>
+                <p class="panel__lede" data-i18n="bio.lede">Atlas kehidupan yang terbuka. Jelajahi jutaan spesies dari GBIF dan iNaturalist, pohon kehidupan sampai tingkat spesies, dan materi biologi yang mengikuti jenjangmu.</p>
+                <dl class="facts">
+                  <div><dt>41</dt><dd data-i18n="bio.f1">topik dalam 8 bidang biologi</dd></div>
+                  <div><dt>160</dt><dd data-i18n="bio.f2">kartu spesies kurasi</dd></div>
+                  <div><dt>9</dt><dd data-i18n="bio.f3">simulasi laboratorium</dd></div>
+                  <div><dt>5</dt><dd data-i18n="bio.f4">mode: SD sampai guru</dd></div>
+                </dl>
+                <div class="panel__actions">
+                  <a class="btn btn--tone" href="https://biotaloka.asadinedu.com/"><span data-i18n="bio.cta">Buka Biotaloka</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6m0 0H7m7 0v7"/></svg></a>
+                  <a class="link" href="https://github.com/asaddin02/asadin-edu-biotaloka" data-i18n="code">Kode sumber</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel" id="chem" data-tone="chem" aria-labelledby="chem-title">
+              <a class="shot" href="https://kimialoka.asadinedu.com/" tabindex="-1" aria-hidden="true">
+                <span class="shot__bar"><i></i><i></i><i></i><span>kimialoka.asadinedu.com</span></span>
+                <img loading="lazy" decoding="async" src="/assets/img/shot-kimialoka-1280.webp" srcset="/assets/img/shot-kimialoka-640.webp 640w, /assets/img/shot-kimialoka-1280.webp 1280w" sizes="(min-width: 1000px) 820px, 100vw" alt="" width="1280" height="800">
+              </a>
+              <div class="panel__body">
+                <p class="panel__meta"><img src="/assets/logos/kimialoka.png" alt="" width="28" height="28"><span>02 · <span data-i18n="chem.field">Kimia</span></span></p>
+                <h3 id="chem-title" class="panel__title">Kimialoka</h3>
+                <p class="panel__lede" data-i18n="chem.lede">Ensiklopedia kimia interaktif, dari materi dan atom sampai reaksi. Nilai ilmiahnya diambil dari lembaga rujukan seperti IUPAC, PubChem, dan NIST, lengkap dengan sumbernya.</p>
+                <dl class="facts">
+                  <div><dt>118</dt><dd data-i18n="chem.f1">unsur dengan berat atom IUPAC</dd></div>
+                  <div><dt>3.557</dt><dd data-i18n="chem.f2">nuklida, 60 ion, 76 reaksi</dd></div>
+                  <div><dt>292</dt><dd data-i18n="chem.f3">molekul dan material kurasi</dd></div>
+                  <div><dt>14</dt><dd data-i18n="chem.f4">laboratorium virtual</dd></div>
+                </dl>
+                <div class="panel__actions">
+                  <a class="btn btn--tone" href="https://kimialoka.asadinedu.com/"><span data-i18n="chem.cta">Buka Kimialoka</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6m0 0H7m7 0v7"/></svg></a>
+                  <a class="link" href="https://github.com/asaddin02/asadin-edu-kimialoka" data-i18n="code">Kode sumber</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel" id="phys" data-tone="phys" aria-labelledby="phys-title">
+              <a class="shot" href="https://fisikaloka.asadinedu.com/" tabindex="-1" aria-hidden="true">
+                <span class="shot__bar"><i></i><i></i><i></i><span>fisikaloka.asadinedu.com</span></span>
+                <img loading="lazy" decoding="async" src="/assets/img/shot-fisikaloka-1280.webp" srcset="/assets/img/shot-fisikaloka-640.webp 640w, /assets/img/shot-fisikaloka-1280.webp 1280w" sizes="(min-width: 1000px) 820px, 100vw" alt="" width="1280" height="800">
+              </a>
+              <div class="panel__body">
+                <p class="panel__meta"><img src="/assets/logos/fisikaloka.png" alt="" width="28" height="28"><span>03 · <span data-i18n="phys.field">Fisika</span></span></p>
+                <h3 id="phys-title" class="panel__title">Fisikaloka</h3>
+                <p class="panel__lede" data-i18n="phys.lede">Ruang belajar fisika berbahasa Indonesia. Setiap pelajaran bergerak dari intuisi ke penjelasan, contoh terurai, aktivitas, dan kuis, dengan asumsi dan batas model yang ditulis terang.</p>
+                <dl class="facts">
+                  <div><dt>61</dt><dd data-i18n="phys.f1">pelajaran, SD sampai universitas</dd></div>
+                  <div><dt>13</dt><dd data-i18n="phys.f2">laboratorium interaktif</dd></div>
+                  <div><dt>28</dt><dd data-i18n="phys.f3">domain fisika yang terhubung</dd></div>
+                  <div><dt>19</dt><dd data-i18n="phys.f4">persamaan, 14 berkalkulator</dd></div>
+                </dl>
+                <div class="panel__actions">
+                  <a class="btn btn--tone" href="https://fisikaloka.asadinedu.com/"><span data-i18n="phys.cta">Buka Fisikaloka</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6m0 0H7m7 0v7"/></svg></a>
+                  <a class="link" href="https://github.com/asaddin02/asadin-edu-fisikaloka" data-i18n="code">Kode sumber</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel" id="myth" data-tone="myth" aria-labelledby="myth-title">
+              <a class="shot" href="https://mitoloka.asadinedu.com/" tabindex="-1" aria-hidden="true">
+                <span class="shot__bar"><i></i><i></i><i></i><span>mitoloka.asadinedu.com</span></span>
+                <img loading="lazy" decoding="async" src="/assets/img/shot-mitoloka-1280.webp" srcset="/assets/img/shot-mitoloka-640.webp 640w, /assets/img/shot-mitoloka-1280.webp 1280w" sizes="(min-width: 1000px) 820px, 100vw" alt="" width="1280" height="800">
+              </a>
+              <div class="panel__body">
+                <p class="panel__meta"><img src="/assets/logos/mitoloka.png" alt="" width="28" height="28"><span>04 · <span data-i18n="myth.field">Mitologi</span></span></p>
+                <h3 id="myth-title" class="panel__title">Mitoloka</h3>
+                <p class="panel__lede" data-i18n="myth.lede">Ensiklopedia makhluk mitologi dan folklor dari berbagai peradaban. Setiap entri bersandar pada kutipan sumber, membedakan tradisi asli dari budaya populer, dan menghormati keyakinan yang masih hidup.</p>
+                <dl class="facts">
+                  <div><dt>1.567</dt><dd data-i18n="myth.f1">makhluk dengan ilustrasi</dd></div>
+                  <div><dt>121</dt><dd data-i18n="myth.f2">tradisi budaya</dd></div>
+                  <div><dt>2</dt><dd data-i18n="myth.f3">bahasa: Indonesia, English</dd></div>
+                  <div><dt>5</dt><dd data-i18n="myth.f4">panduan belajar</dd></div>
+                </dl>
+                <div class="panel__actions">
+                  <a class="btn btn--tone" href="https://mitoloka.asadinedu.com/"><span data-i18n="myth.cta">Buka Mitoloka</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6m0 0H7m7 0v7"/></svg></a>
+                  <a class="link" href="https://github.com/asaddin02/asadin-edu-mitoloka" data-i18n="code">Kode sumber</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="tentang" aria-labelledby="about-title">
+      <div class="wrap about__grid">
+        <div class="about__intro">
+          <p class="kicker" data-i18n="ab.kicker">Tentang Asadin Edu</p>
+          <h2 id="about-title" class="h2" data-i18n="ab.title">Bukan sekolah, bukan perusahaan. Sebuah payung.</h2>
+          <p class="about__text" data-i18n="ab.p1">Asadin Edu adalah nama payung yang dibuat Prasada Arif Nurudin untuk menaungi karya-karyanya di bidang pendidikan. Semuanya dijalankan oleh satu orang, dengan satu tujuan: membuat belajar di Indonesia lebih mudah dan terjangkau.</p>
+          <p class="about__text" data-i18n="ab.p2">Setiap ruang belajar berdiri sendiri, dengan alamatnya sendiri, tetapi memegang empat prinsip yang sama.</p>
+        </div>
+        <ol class="rules">
+          <li>
+            <span class="rules__no">01</span>
+            <div><h3 data-i18n="pr.1.t">Tanpa penghalang</h3><p data-i18n="pr.1.p">Gratis, tanpa iklan, tanpa akun, dan tanpa pelacak. Catatan belajar tersimpan di perangkatmu sendiri.</p></div>
           </li>
-          <li data-reveal>
-            <span class="principles__no">ii.</span>
-            <h3 data-i18n="pr.2.t">Setiap fakta punya sumber</h3>
-            <p data-i18n="pr.2.p">Nilai, klaim, dan gambar ditautkan ke rujukannya: IUPAC, GBIF, iNaturalist, OpenStax, Wikidata, dan lembaga lain. Informasi yang belum tersedia ditandai, bukan dikarang.</p>
+          <li>
+            <span class="rules__no">02</span>
+            <div><h3 data-i18n="pr.2.t">Setiap fakta bersumber</h3><p data-i18n="pr.2.p">Nilai, klaim, dan gambar ditautkan ke rujukannya, seperti IUPAC, GBIF, OpenStax, dan Wikidata. Yang belum tersedia ditandai, tidak dikarang.</p></div>
           </li>
-          <li data-reveal>
-            <span class="principles__no">iii.</span>
-            <h3 data-i18n="pr.3.t">Satu materi, banyak jenjang</h3>
-            <p data-i18n="pr.3.p">Topik yang sama ditulis berlapis, dari bahasa anak SD sampai kedalaman kuliah, dan guru mendapat tujuan pembelajaran, asesmen, serta bahan siap cetak.</p>
+          <li>
+            <span class="rules__no">03</span>
+            <div><h3 data-i18n="pr.3.t">Satu materi, banyak jenjang</h3><p data-i18n="pr.3.p">Topik yang sama ditulis berlapis, dari bahasa anak SD sampai kedalaman kuliah, dan guru mendapat bahan siap pakai.</p></div>
           </li>
-          <li data-reveal>
-            <span class="principles__no">iv.</span>
-            <h3 data-i18n="pr.4.t">Terbuka untuk diperiksa</h3>
-            <p data-i18n="pr.4.p">Kode keempat proyek terbuka di GitHub. Siapa pun boleh memeriksa cara kerjanya, melaporkan kesalahan, atau memakainya di kelas.</p>
+          <li>
+            <span class="rules__no">04</span>
+            <div><h3 data-i18n="pr.4.t">Terbuka untuk diperiksa</h3><p data-i18n="pr.4.p">Kode keempat ruang belajar terbuka di GitHub. Siapa pun boleh memeriksa, melaporkan kesalahan, atau memakainya di kelas.</p></div>
           </li>
         </ol>
       </div>
     </section>
 
-    <!-- Founder -->
+    <!-- ============ FOUNDER ============ -->
     <section class="founder" id="pendiri" aria-labelledby="founder-title">
       <div class="wrap founder__grid">
-        <figure class="founder__photo" data-reveal>
-          <img loading="lazy" decoding="async" src="/assets/img/founder-960.webp" srcset="/assets/img/founder-480.webp 480w, /assets/img/founder-960.webp 960w" sizes="(min-width: 960px) 34vw, 80vw" alt="Prasada Arif Nurudin, pendiri Asadin Edu" data-i18n-alt="f.alt" width="960" height="1200">
-          <figcaption><span data-i18n="f.caption">Pendiri Asadin Edu</span></figcaption>
+        <figure class="founder__photo">
+          <img loading="lazy" decoding="async" src="/assets/img/founder-960.webp" srcset="/assets/img/founder-480.webp 480w, /assets/img/founder-960.webp 960w" sizes="(min-width: 900px) 400px, 80vw" alt="Prasada Arif Nurudin, pendiri dan pengelola Asadin Edu" data-i18n-alt="f.alt" width="960" height="1200">
         </figure>
-        <div class="founder__text" data-reveal>
-          <p class="kicker" data-i18n="f.kicker">Pendiri</p>
+        <div class="founder__text">
+          <p class="kicker" data-i18n="f.kicker">Pendiri dan pengelola</p>
           <h2 id="founder-title" class="founder__name">Prasada Arif Nurudin</h2>
           <p class="founder__role" data-i18n="f.role">Software developer · Koordinator TI di Rahoclub, Surabaya</p>
-          <p class="founder__body" data-i18n="f.p1">Prasada mendirikan Asadin Edu sebagai lembaga independen dengan satu tujuan: membuat bahan belajar yang jernih dan akurat bisa dijangkau siapa saja, dari ruang kelas di kota besar sampai rumah di pelosok.</p>
-          <p class="founder__body" data-i18n="f.p2">Lebih dari empat tahun membangun aplikasi seluler, backend, dan sistem ERP, ia kini merancang keempat dunia Asadin Edu, dari riset sumber sampai antarmuka yang ramah untuk anak.</p>
+          <p class="founder__body" data-i18n="f.p1">Prasada membuat Asadin Edu sebagai payung untuk karya pendidikannya: ruang belajar yang jernih, akurat, dan bisa dijangkau siapa saja, dari ruang kelas di kota besar sampai rumah di pelosok.</p>
+          <p class="founder__body" data-i18n="f.p2">Dengan pengalaman lebih dari empat tahun membangun aplikasi seluler, backend, dan sistem ERP, ia mengerjakan sendiri keempat dunia Asadin Edu, dari riset sumber sampai antarmuka yang ramah untuk anak.</p>
           <div class="founder__links">
-            <a class="btn btn--ink" href="https://asadin-personal-info.pages.dev/"><span data-i18n="f.site">Kunjungi situs pribadinya</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6m0 0H7m7 0v7"/></svg></a>
-            <a class="link" href="https://www.linkedin.com/in/prasada-arif-nurudin">LinkedIn</a>
-            <a class="link" href="https://github.com/asaddin02">GitHub</a>
+            <a class="btn btn--paper" href="https://asadin-personal-info.pages.dev/"><span data-i18n="f.site">Kunjungi situs pribadinya</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6m0 0H7m7 0v7"/></svg></a>
+            <a class="link link--light" href="https://www.linkedin.com/in/prasada-arif-nurudin">LinkedIn</a>
+            <a class="link link--light" href="https://github.com/asaddin02">GitHub</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Support -->
+    <!-- ============ SUPPORT ============ -->
     <section class="support" id="dukung" aria-labelledby="support-title">
-      <div class="wrap support__grid" data-reveal>
+      <div class="wrap support__grid">
         <div>
           <p class="kicker" data-i18n="s.kicker">Dukung</p>
-          <h2 id="support-title" class="h2" data-i18n="s.title">Bantu pintunya tetap terbuka.</h2>
+          <h2 id="support-title" class="h2" data-i18n="s.title">Bantu agar semuanya tetap gratis.</h2>
           <p class="support__text" data-i18n="s.text">Asadin Edu tidak memasang iklan dan tidak menjual data. Dukungan sukarela membantu biaya riset, ilustrasi, dan server. Semua materi tetap gratis, dengan atau tanpa dukunganmu.</p>
         </div>
         <div class="support__actions">
           <a class="support__card" href="https://saweria.co/asadin02">
             <span class="support__label" data-i18n="s.local">Dari Indonesia</span>
             <span class="support__name">Saweria</span>
-            <span class="support__hint" data-i18n="s.local.hint">Untuk dukungan dalam rupiah</span>
+            <span class="support__hint" data-i18n="s.local.hint">Dukungan dalam rupiah</span>
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6m0 0H7m7 0v7"/></svg>
           </a>
           <a class="support__card" href="https://ko-fi.com/asadin02">
             <span class="support__label" data-i18n="s.intl">Internasional</span>
             <span class="support__name">Ko-fi</span>
-            <span class="support__hint" data-i18n="s.intl.hint">Untuk dukungan dari luar negeri</span>
+            <span class="support__hint" data-i18n="s.intl.hint">Dukungan dari luar negeri</span>
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6m0 0H7m7 0v7"/></svg>
           </a>
         </div>
       </div>
@@ -330,11 +334,11 @@
   <footer class="footer">
     <div class="wrap footer__grid">
       <div class="footer__brand">
-        <a class="brand" href="/"><img src="/assets/logos/asadin.svg" alt="" width="30" height="30"><span class="brand__name">Asadin <em>Edu</em></span></a>
-        <p data-i18n="ft.about">Lembaga pendidikan independen. Pasuruan, Jawa Timur, Indonesia.</p>
+        <a class="brand" href="/"><img src="/assets/logos/asadin.svg" alt="" width="28" height="28"><span class="brand__name">Asadin <em>Edu</em></span></a>
+        <p data-i18n="ft.about">Payung independen untuk pendidikan Indonesia, dijalankan oleh Prasada Arif Nurudin dari Pasuruan, Jawa Timur.</p>
       </div>
-      <nav class="footer__col" aria-label="Empat dunia" data-i18n-aria="nav.worlds">
-        <p class="footer__head" data-i18n="nav.worlds">Empat dunia</p>
+      <nav class="footer__col" aria-label="Ruang belajar" data-i18n-aria="nav.worlds">
+        <p class="footer__head" data-i18n="nav.worlds">Ruang belajar</p>
         <a href="https://biotaloka.asadinedu.com/">Biotaloka</a>
         <a href="https://kimialoka.asadinedu.com/">Kimialoka</a>
         <a href="https://fisikaloka.asadinedu.com/">Fisikaloka</a>
@@ -347,9 +351,11 @@
         <a href="https://github.com/asaddin02">GitHub</a>
       </nav>
     </div>
-    <div class="wrap footer__base">
-      <p>© <span data-year>2026</span> Asadin Edu</p>
-      <a href="#main" class="link" data-i18n="ft.top">Kembali ke atas</a>
+    <div class="wrap">
+      <div class="footer__base">
+        <p>© <span data-year>2026</span> Asadin Edu</p>
+        <a href="#main" class="link link--light" data-i18n="ft.top">Kembali ke atas</a>
+      </div>
     </div>
   </footer>
 </body>
