@@ -41,16 +41,20 @@
   --phys-solid: #bd382c;
   --myth-solid: #2a2218;
   --myth-gold: #e2b65c;
+  --code-solid: #173e40;
+  --code-coral: #ff9a76;
 
   /* World colours used as text on the page background. */
   --bio-text: #176344;
   --chem-text: #2457d6;
   --phys-text: #b5352a;
   --myth-text: #7a550f;
+  --code-text: #1d5a5c;
   --bio-soft: #e1eadb;
   --chem-soft: #dfe5f5;
   --phys-soft: #f3dfd8;
   --myth-soft: #ece1cb;
+  --code-soft: #dbe9e4;
 
   --serif: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
   --sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -79,10 +83,12 @@
     --chem-text: #94acf6;
     --phys-text: #f28d7e;
     --myth-text: #e0b25c;
+    --code-text: #7fcfc6;
     --bio-soft: #17251d;
     --chem-soft: #171d2d;
     --phys-soft: #2a1815;
     --myth-soft: #262015;
+    --code-soft: #132322;
     --shadow: 0 24px 48px -30px rgba(0, 0, 0, 0.8);
     color-scheme: dark;
   }
@@ -92,6 +98,7 @@
 [data-tone="chem"] { --tone-text: var(--chem-text); --tone-solid: var(--chem-solid); --tone-soft: var(--chem-soft); --tone-on: #fff; }
 [data-tone="phys"] { --tone-text: var(--phys-text); --tone-solid: var(--phys-solid); --tone-soft: var(--phys-soft); --tone-on: #fff; }
 [data-tone="myth"] { --tone-text: var(--myth-text); --tone-solid: var(--myth-solid); --tone-soft: var(--myth-soft); --tone-on: var(--myth-gold); }
+[data-tone="code"] { --tone-text: var(--code-text); --tone-solid: var(--code-solid); --tone-soft: var(--code-soft); --tone-on: #fff; }
 
 /* ---------- Base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
@@ -249,7 +256,7 @@ button { font: inherit; color: inherit; }
 .byline__label { color: var(--muted); }
 .byline strong { font-weight: 600; color: var(--ink); }
 
-/* The umbrella: an arc over four world tiles. */
+/* The umbrella: an arc over the world tiles. */
 .canopy { position: relative; }
 .canopy__arc { display: block; width: 100%; height: auto; margin-bottom: -6px; overflow: visible; }
 .canopy__line { stroke: var(--ink); stroke-width: 1.6; }
@@ -271,6 +278,15 @@ button { font: inherit; color: inherit; }
 .tile--phys { background-color: var(--phys-solid); }
 .tile--myth { background-color: var(--myth-solid); color: #f4ead6; }
 .tile--myth .tile__field, .tile--myth .tile__no { color: var(--myth-gold); }
+.tile--code { background-color: var(--code-solid); }
+.tile--code .tile__field, .tile--code .tile__no { color: var(--code-coral); }
+/* A fifth world takes the whole last row, laid out across instead of down. */
+.tiles li:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.tiles li:last-child:nth-child(odd) .tile { min-height: 0; display: grid; grid-template-columns: auto 1fr auto; grid-template-areas: "logo name top" "logo field top"; column-gap: 16px; align-items: center; }
+.tiles li:last-child:nth-child(odd) .tile__logo { grid-area: logo; margin-top: 0; }
+.tiles li:last-child:nth-child(odd) .tile__name { grid-area: name; margin-top: 0; align-self: end; }
+.tiles li:last-child:nth-child(odd) .tile__field { grid-area: field; align-self: start; }
+.tiles li:last-child:nth-child(odd) .tile__top { grid-area: top; gap: 14px; align-self: start; }
 .tile:hover { transform: translateY(-4px); box-shadow: 0 22px 40px -24px rgba(23, 20, 15, 0.7), inset 0 0 0 1px rgba(255, 255, 255, 0.12); }
 .tile:hover .tile__arrow { transform: translate(3px, -3px); }
 .tile__top { display: flex; justify-content: space-between; align-items: center; }
@@ -329,6 +345,7 @@ button { font: inherit; color: inherit; }
 .t-chem { color: var(--chem-text); }
 .t-phys { color: var(--phys-text); }
 .t-myth { color: var(--myth-text); }
+.t-code { color: var(--code-text); }
 
 .showcase { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: clamp(40px, 5vw, 72px); align-items: start; }
 .showcase__index { position: sticky; top: 104px; }

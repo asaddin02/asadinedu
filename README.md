@@ -1,6 +1,6 @@
 # Asadin Edu · asadinedu.com
 
-Situs landing **Asadin Edu**, payung independen untuk pendidikan Indonesia yang dijalankan sendiri oleh Prasada Arif Nurudin. Asadin Edu bukan sekolah atau perusahaan; halaman ini memperkenalkan keempat ruang belajar di bawah payungnya dan menautkannya:
+Situs landing **Asadin Edu**, payung independen untuk pendidikan Indonesia yang dijalankan sendiri oleh Prasada Arif Nurudin. Asadin Edu bukan sekolah atau perusahaan; halaman ini memperkenalkan kelima ruang belajar di bawah payungnya dan menautkannya:
 
 | Proyek | Bidang | Alamat | Repo |
 |---|---|---|---|
@@ -8,6 +8,7 @@ Situs landing **Asadin Edu**, payung independen untuk pendidikan Indonesia yang 
 | Kimialoka | Kimia | https://kimialoka.asadinedu.com | [asadin-edu-kimialoka](https://github.com/asaddin02/asadin-edu-kimialoka) |
 | Fisikaloka | Fisika | https://fisikaloka.asadinedu.com | [asadin-edu-fisikaloka](https://github.com/asaddin02/asadin-edu-fisikaloka) |
 | Mitoloka | Mitologi | https://mitoloka.asadinedu.com | [asadin-edu-mitoloka](https://github.com/asaddin02/asadin-edu-mitoloka) |
+| Kodeloka | Pemrograman | https://kodeloka.asadinedu.com | [asadin-edu-kodeloka](https://github.com/asaddin02/asadin-edu-kodeloka) |
 
 Situs pendiri: https://asadin-personal-info.pages.dev
 
@@ -15,7 +16,7 @@ Situs pendiri: https://asadin-personal-info.pages.dev
 
 Situs statis tanpa framework dan tanpa build: `index.html`, `styles.css`, dan `app.js` (pilihan bahasa ID/EN, indeks ruang belajar yang mengikuti gulir, menu ponsel, dan animasi halus yang menghormati *reduced motion*). Huruf Fraunces dan Instrument Sans disimpan sendiri di `assets/fonts/` (SIL Open Font License), jadi halaman tidak memuat apa pun dari luar. `_headers` memasang CSP ketat dan cache aset.
 
-Angka di setiap kartu proyek diambil dari README dan data proyek masing-masing (13 Oktober 2026). Perbarui di sini bila proyeknya berubah.
+Angka di setiap kartu proyek diambil dari README dan data proyek masing-masing (13 Oktober 2026; Mitoloka dan Kodeloka diperbarui 15 Oktober 2026). Perbarui di sini bila proyeknya berubah.
 
 ## Menjalankan
 
