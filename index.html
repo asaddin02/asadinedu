@@ -193,6 +193,10 @@
         </div>
 
         <div class="canopy">
+          <div class="canopy__signature" aria-hidden="true">
+            <img src="/assets/logos/asadin.svg" alt="" width="72" height="72">
+            <span>OPEN LEARNING SYSTEM</span>
+          </div>
           <svg class="canopy__arc" viewBox="0 0 600 150" aria-hidden="true" focusable="false">
             <path id="arc-path" d="M20 148 C 60 30, 540 30, 580 148" fill="none"/>
             <path class="canopy__line" d="M20 148 C 60 30, 540 30, 580 148" fill="none"/>
@@ -220,11 +224,11 @@
             </a></li>
             <li><a class="tile tile--myth" href="https://mitoloka.asadinedu.com/">
               <span class="tile__top"><span class="tile__no">04</span><svg class="tile__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6m0 0H7m7 0v7"/></svg></span>
-              <span class="tile__logo"><img src="/assets/logos/mitoloka.png" alt="" width="40" height="40"></span>
+              <span class="tile__logo"><img src="/assets/logos/mitoloka-crown.svg" alt="" width="40" height="40"></span>
               <span class="tile__name">Mitoloka</span>
               <span class="tile__field" data-i18n="myth.field">Mitologi</span>
             </a></li>
-            <li><a class="tile tile--code" href="https://kodeloka.asadinedu.com/">
+            <li class="tile-slot--featured"><a class="tile tile--code tile--featured" href="https://kodeloka.asadinedu.com/">
               <span class="tile__top"><span class="tile__no">05</span><svg class="tile__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6m0 0H7m7 0v7"/></svg></span>
               <span class="tile__logo"><img src="/assets/logos/kodeloka.png" alt="" width="40" height="40"></span>
               <span class="tile__name">Kodeloka</span>
@@ -243,6 +247,26 @@
           <div><dt>Rp0</dt><dd data-i18n="rb.5">biaya untuk belajar</dd></div>
           <div><dt>543</dt><dd data-i18n="rb.6">modul pemrograman</dd></div>
         </dl>
+      </div>
+    </section>
+
+    <!-- ============ ORIENTATION ============ -->
+    <section class="orientation" aria-labelledby="orientation-title">
+      <div class="wrap">
+        <header class="orientation__head">
+          <div>
+            <p class="kicker" data-i18n="or.kicker">Peta rasa ingin tahu</p>
+            <h2 id="orientation-title" class="h2" data-i18n="or.title">Mulai dari pertanyaan yang kamu punya hari ini.</h2>
+          </div>
+          <p class="orientation__text" data-i18n="or.text">Tak perlu menebak harus mulai dari mana. Pilih dunia yang paling dekat dengan hal yang ingin kamu pahami, lalu lanjutkan dengan ritmemu sendiri.</p>
+        </header>
+        <ol class="orientation__routes">
+          <li><a class="orientation__route orientation__route--bio" href="https://biotaloka.asadinedu.com/"><span class="orientation__number">01</span><img src="/assets/logos/biotaloka.png" alt="" width="36" height="36"><span><strong>Biotaloka</strong><small data-i18n="or.bio">Makhluk hidup, evolusi, dan ekosistem.</small></span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5"/></svg></a></li>
+          <li><a class="orientation__route orientation__route--chem" href="https://kimialoka.asadinedu.com/"><span class="orientation__number">02</span><img src="/assets/logos/kimialoka.png" alt="" width="36" height="36"><span><strong>Kimialoka</strong><small data-i18n="or.chem">Atom, materi, dan reaksi di sekitarmu.</small></span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5"/></svg></a></li>
+          <li><a class="orientation__route orientation__route--phys" href="https://fisikaloka.asadinedu.com/"><span class="orientation__number">03</span><img src="/assets/logos/fisikaloka.png" alt="" width="36" height="36"><span><strong>Fisikaloka</strong><small data-i18n="or.phys">Gerak, energi, dan cara dunia bekerja.</small></span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5"/></svg></a></li>
+          <li><a class="orientation__route orientation__route--myth" href="https://mitoloka.asadinedu.com/"><span class="orientation__number">04</span><img src="/assets/logos/mitoloka-crown.svg" alt="" width="36" height="36"><span><strong>Mitoloka</strong><small data-i18n="or.myth">Legenda, budaya, dan makhluk dari banyak dunia.</small></span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5"/></svg></a></li>
+          <li><a class="orientation__route orientation__route--code" href="https://kodeloka.asadinedu.com/"><span class="orientation__number">05</span><img src="/assets/logos/kodeloka.png" alt="" width="36" height="36"><span><strong>Kodeloka</strong><small data-i18n="or.code">Bangun perangkat lunak dan sistem yang utuh.</small></span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5"/></svg></a></li>
+        </ol>
       </div>
     </section>
 
@@ -341,7 +365,7 @@
                 <img loading="lazy" decoding="async" src="/assets/img/shot-mitoloka-1280.webp" srcset="/assets/img/shot-mitoloka-640.webp 640w, /assets/img/shot-mitoloka-1280.webp 1280w" sizes="(min-width: 1000px) 820px, 100vw" alt="" width="1280" height="800">
               </a>
               <div class="panel__body">
-                <p class="panel__meta"><img src="/assets/logos/mitoloka.png" alt="" width="28" height="28"><span>04 · <span data-i18n="myth.field">Mitologi</span></span></p>
+                <p class="panel__meta"><img src="/assets/logos/mitoloka-crown.svg" alt="" width="28" height="28"><span>04 · <span data-i18n="myth.field">Mitologi</span></span></p>
                 <h3 id="myth-title" class="panel__title">Mitoloka</h3>
                 <p class="panel__lede" data-i18n="myth.lede">Ensiklopedia makhluk mitologi dan folklor dari berbagai peradaban. Setiap entri bersandar pada kutipan sumber, membedakan tradisi asli dari budaya populer, dan menghormati keyakinan yang masih hidup.</p>
                 <dl class="facts">
